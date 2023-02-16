@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- font ends here -->
+  <title>CSS card template</title>
+  <link href="./vendors/prism.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./sass/style.css">
+</head>
+<body>
+  <section class="example-1">
+    <div class="card-holder">
+      <div class="card">
+        <img src="./img/img-1.jpg" alt="cat">
+        <h5>Card title goes here</h5>
+        <p>Your card description goes here. Consectetur adipisicing elitllum nulla odit nihil sit sequi quia eligendi corporis.</p>
+        <a href="javascript:void(0)">Card button</a>
+      </div>
+    </div>
+
+<div class="code-holder">
+<div class="code-block"><pre><code class="language-markup"><xmp>
+<div class="card-holder">
+  <div class="card">
+    <img src="./img/img-1.jpg" alt="cat">
+    <h5>Card title goes here</h5>
+    <p>Your card description goes here. Consectetur adipisicing elitllum nulla odit nihil sit sequi quia eligendi corporis.</p>
+    <a href="javascript:void(0)">Card button</a>
+  </div>
+</div>      
+</xmp></code></pre></div><!-- .code-block -->  
+<div class="code-block"><pre><code class="language-css">
+.card-holder {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card-holder .card {
+  max-width: 350px;
+  border: 1px solid #4285F4;
+  border-radius: 3px;
+  -webkit-transition: -webkit-box-shadow 0.7s ease-in;
+  transition: -webkit-box-shadow 0.7s ease-in;
+  transition: box-shadow 0.7s ease-in;
+  transition: box-shadow 0.7s ease-in, -webkit-box-shadow 0.7s ease-in;
+  margin: 30px 15px;
+}
+
+.card-holder .card h5 {
+  padding: 20px 15px;
+}
+
+.card-holder .card p {
+  padding: 0 15px;
+  margin: 0 0 20px;
+}
+
+.card-holder .card a {
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: #E43E31;
+  margin: 0 15px 20px;
+  border: 1px solid #d92a1c;
+  border-radius: 25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-shadow: 2px 1px #222222;
+  -webkit-transition: background-color 0.7s ease;
+  transition: background-color 0.7s ease;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-holder .card a:hover {
+  background-color: #c2190c;
+}
+
+.card-holder .card:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</code></pre></div> <!-- .code-block --> 
+</div>  <!-- .code-holder -->
+</section>  <!-- .example-1 -->
+
+<section class="example-2">
+  <div class="card-holder">
+    <div class="card">
+      <img src="./img/img-2.jpg" alt="dog">
+      <h5>Card title goes here</h5>
+      <p>Your card description goes here. Consectetur adipisicing elitllum nulla odit nihil sit sequi quia eligendi corporis.</p>
+      <ul>
+        <li>Lorem ipsum dolor sit elit</li>
+        <li>Amet consectetur adipisicing</li>
+        <li>Obcaecati modi ex culpa</li>
+        <li>Provident nostrum possimus</li>
+      </ul>
+      <div class="links">
+        <a href="javascript:void(0)">Eligendi</a>
+        <a href="javascript:void(0)">Possimus</a>
+      </div>
+    </div>
+  </div>  <!-- .card-holder -->
+<div class="code-holder">
+<div class="code-block"><pre><code class="language-markup"><xmp>
+<div class="card-holder">
+  <div class="card">
+    <img src="./img/img-2.jpg" alt="dog">
+    <h5>Card title goes here</h5>
+    <p>Your card description goes here. Consectetur adipisicing elitllum nulla odit nihil sit sequi quia eligendi corporis.</p>
+    <ul>
+      <li>Lorem ipsum dolor sit elit</li>
+      <li>Amet consectetur adipisicing</li>
+      <li>Obcaecati modi ex culpa</li>
+      <li>Provident nostrum possimus</li>
+    </ul>
+    <div class="links">
+      <a href="javascript:void(0)">Eligendi</a>
+      <a href="javascript:void(0)">Possimus</a>
+    </div>
+  </div>
+</div>  <!-- .card-holder -->
+</xmp></code></pre></div><!-- .code-block -->  
+<div class="code-block"><pre><code class="language-css">
+// in addition to the example-1, I have the folllowing css
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  font-size: 14px;
+  border-bottom: 1px solid #c0c1c2;
+  padding: 15px 15px;
+}
+
+ul li:first-child {
+  border-top: 1px solid #c0c1c2;
+}
+</code></pre></div> <!-- .code-block --> 
+</div>  <!-- .code-holder -->  
+</section>  <!--.example-2  -->
+
+<section class="example-3">
+  <h2>Pricing cards</h2>
+  <div class="card-holder">
+    <div class="item">
+      <div class="item--header">
+        <h3 class="package">Basic</h3>
+        <p><data class="price" value="300">$300</data></p>
+      </div> <!-- .item--header -->
+      <ul>
+        <li>Lorem ipsum dolor</li>
+        <li>Sit amet consectetur</li>
+        <li>Adipisicing elit</li>
+        <li>Facere illo distinctio</li>
+        <li>Voluptates vero</li>
+        <!-- <li>Facere accusantium</li> -->
+        <!-- <li>Dicta tempore doloremque</li> -->
+      </ul>
+      <div class="link">
+        <a href="javascript:void(0)">Buy now</a>
+      </div>
+    </div>   <!-- .item -->
+    <div class="item">
+      <div class="item--header">
+        <h3 class="package">Standard</h3>
+        <p><data class="price" value="500">$500</data></p>
+      </div> <!-- .item--header -->
+      <ul>
+        <li>Lorem ipsum dolor</li>
+        <li>Sit amet consectetur</li>
+        <li>Adipisicing elit</li>
+        <li>Facere illo distinctio</li>
+        <li>Voluptates vero</li>
+        <li>Facere accusantium</li>
+        <!-- <li>Dicta tempore doloremque</li> -->
+      </ul>
+      <div class="link">
+        <a href="javascript:void(0)">Buy now</a>
+      </div>
+    </div>   <!-- .item -->
+    <div class="item">
+      <div class="item--header">
+        <h3 class="package">Premium</h3>
+        <p><data class="price" value="700">$700</data></p>
+      </div> <!-- .item--header -->
+      <ul>
+        <li>Lorem ipsum dolor</li>
+        <li>Sit amet consectetur</li>
+        <li>Adipisicing elit</li>
+        <li>Facere illo distinctio</li>
+        <li>Voluptates vero</li>
+        <li>Facere accusantium</li>
+        <li>Dicta tempore doloremque</li>
+      </ul>
+      <div class="link">
+        <a href="javascript:void(0)">Buy now</a>
+      </div>
+    </div>   <!-- .item -->
+  </div>  <!-- .card-holder -->
+</section> <!-- .example-3 -->
+
+<script src="./vendors/prism.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

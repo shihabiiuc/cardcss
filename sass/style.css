@@ -1,0 +1,258 @@
+/* 
+* font-family: 'Roboto', sans-serif;
+* weight: 100, 400, 700 & their italics
+**/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #e3ecfa;
+}
+
+img {
+  max-width: 100%;
+}
+
+h5 {
+  margin: 0;
+  font-size: 22px;
+  color: #1F4662;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #15232D;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+section {
+  padding: 60px 15px;
+}
+
+.code-block code[class*=language-], .code-block pre[class*=language-] {
+  white-space: pre-wrap;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .code-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.code-holder .code-block {
+  max-height: 400px;
+  overflow: auto;
+}
+
+@media (min-width: 768px) {
+  .code-holder .code-block {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+
+.example-1 {
+  background-color: #fff8e8;
+}
+
+.card-holder {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card-holder .card {
+  max-width: 350px;
+  border: 1px solid #4285F4;
+  border-radius: 3px;
+  -webkit-transition: -webkit-box-shadow 0.7s ease-in;
+  transition: -webkit-box-shadow 0.7s ease-in;
+  transition: box-shadow 0.7s ease-in;
+  transition: box-shadow 0.7s ease-in, -webkit-box-shadow 0.7s ease-in;
+  margin: 30px 15px;
+}
+
+.card-holder .card h5 {
+  padding: 20px 15px;
+}
+
+.card-holder .card p {
+  padding: 0 15px;
+  margin: 0 0 20px;
+}
+
+.card-holder .card a {
+  padding: 10px 30px;
+  display: inline-block;
+  background-color: #E43E31;
+  margin: 0 15px 20px;
+  border: 1px solid #d92a1c;
+  border-radius: 25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-shadow: 2px 1px #222222;
+  -webkit-transition: background-color 0.7s ease;
+  transition: background-color 0.7s ease;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-holder .card a:hover {
+  background-color: #c2190c;
+}
+
+.card-holder .card:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.example-2 {
+  background-color: #c7e3ff;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  font-size: 14px;
+  border-bottom: 1px solid #c0c1c2;
+  padding: 15px 15px;
+}
+
+ul li:first-child {
+  border-top: 1px solid #c0c1c2;
+}
+
+.example-3 {
+  background-color: #fff4e6;
+}
+
+.example-3 h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FD334D;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .example-3 h2 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .example-3 .card-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.example-3 .card-holder .item {
+  margin: 0 0 30px;
+  border: 1px solid #fcb65d;
+  border-radius: 3px;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in;
+  transition: -webkit-box-shadow 0.5s ease-in;
+  transition: box-shadow 0.5s ease-in;
+  transition: box-shadow 0.5s ease-in, -webkit-box-shadow 0.5s ease-in;
+}
+
+@media (min-width: 768px) {
+  .example-3 .card-holder .item {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.example-3 .card-holder .item .item--header {
+  text-align: center;
+  background-color: #0C1733;
+  padding: 30px 15px;
+}
+
+.example-3 .card-holder .item .item--header h3 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #92E81C;
+  font-size: 36px;
+}
+
+.example-3 .card-holder .item .item--header p {
+  margin: 0;
+}
+
+.example-3 .card-holder .item .item--header p .price {
+  color: white;
+  font-size: 22px;
+}
+
+.example-3 .card-holder .item ul {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .example-3 .card-holder .item ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.example-3 .card-holder .item ul li {
+  font-weight: 100;
+}
+
+.example-3 .card-holder .item .link {
+  padding: 30px 15px;
+}
+
+.example-3 .card-holder .item .link a {
+  display: inline-block;
+  background-color: #92E91F;
+  padding: 10px 30px;
+  color: #0C1733;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 7px;
+  text-transform: capitalize;
+}
+
+.example-3 .card-holder .item:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+/*# sourceMappingURL=style.css.map */
